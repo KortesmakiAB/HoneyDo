@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import Todo from './Todo';
 
 test('if smoking', () => {
-  render(<App />);
+  render(<Todo />);
 });
+
