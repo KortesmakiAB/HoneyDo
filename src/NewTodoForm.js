@@ -39,7 +39,7 @@ const NewTodoForm = ({ addTodo }) => {
                 className="NewTodoForm-input"
                 name="task"
                 value={ taskFormInput.task }
-                placeholder="Honey-Do List Items"
+                placeholder=" Honey-Do List Items"
                 onChange={ handleChange }    
             >
             </input>

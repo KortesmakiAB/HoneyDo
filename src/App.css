@@ -5,9 +5,10 @@ body {
 .App {
 	height: 85vh;
 	position: relative;
-	margin: 20px;
-	padding: 35px;
+	margin: 6px;
+	padding: 6px;
 	font-family: 'Rock Salt', cursive;
+  text-align: center;
 }
 
 .App::before {
@@ -25,6 +26,5 @@ body {
 /* MUST SET position of other items to 'relative' to not pass the opacity to the siblings, children, etc. */
 h1 {
 	position: relative;
-	left: 100px;
 }
 
