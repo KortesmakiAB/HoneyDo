@@ -1,4 +1,5 @@
 import React from 'react';
+import './Todo.css';
 
 const Todo = ({ id, task, isChecked, updateCheck }) => {
 
@@ -13,17 +14,21 @@ const Todo = ({ id, task, isChecked, updateCheck }) => {
             task
         });
     };
+
+    const spanTag = !isChecked ? <span>{ task }</span> : <span style={{textDecoration: 'line-through'}}>{ task }</span>
     
     return (
-        <li>
+        <li className="Todo-noBullet">
             <label htmlFor={id}></label>
             <input 
                 id={id} 
                 name="checkbox" 
                 type="checkbox" 
-                onChange={ handleCheck }>
+                onChange={ handleCheck }
+                className="Todo-input"
+            >
             </input>
-            <span>{ task }</span>
+            { spanTag }
         </li>
     );
 };

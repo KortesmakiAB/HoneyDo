@@ -1,0 +1,7 @@
+.Todo-noBullet {
+	list-style: none;
+}
+
+.Todo-input {
+    margin-right: 15px;
+}
