@@ -1,38 +1,30 @@
+body {
+	background-color: honeydew;
+}
+
 .App {
-  text-align: center;
+	height: 85vh;
+	position: relative;
+	margin: 20px;
+	padding: 35px;
+	font-family: 'Rock Salt', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App::before {
+	content: "";
+	background-image: url('https://produceforkids.com/wp-content/uploads/2020/05/Honeydew-background.jpg');
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.85;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* MUST SET position of other items to 'relative' to not pass the opacity to the siblings, children, etc. */
+h1 {
+	position: relative;
+	left: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <h1>Honey-Do List</h1>
       </header>
-      <main>
+      <main className="App-main">
         <TodoList />
       </main>
     </div>

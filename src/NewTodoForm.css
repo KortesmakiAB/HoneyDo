@@ -1,0 +1,16 @@
+.NewTodoForm {
+	position: relative;
+	display: inline;
+}
+
+.NewTodoForm-label {
+    display: none;
+}
+
+.NewTodoForm-input {
+	width: 200px;
+	height: 25px;
+	padding: 3px;
+    border-radius: 3px;
+    border: none;
+}

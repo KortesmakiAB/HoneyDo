@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { v4 as uuid } from 'uuid';
+import './NewTodoForm.css';
 
 const NewTodoForm = ({ addTodo }) => {
 
@@ -14,7 +15,8 @@ const NewTodoForm = ({ addTodo }) => {
 
         addTodo({
             ...taskFormInput,
-            id: uuid()
+            id: uuid(),
+            isChecked: false
         });
 
         setTaskFormInput(initialState);
@@ -29,11 +31,12 @@ const NewTodoForm = ({ addTodo }) => {
     };
 
     return (
-        <form className="formClass" onSubmit={ handleSubmit }>
-            <label htmlFor="new-task">New task</label>
+        <form className="NewTodoForm" onSubmit={ handleSubmit }>
+            <label className="NewTodoForm-label" htmlFor="new-task">New task</label>
             <input 
                 type="text" 
                 id="new-task"
+                className="NewTodoForm-input"
                 name="task"
                 value={ taskFormInput.task }
                 placeholder="Honey-Do List Items"

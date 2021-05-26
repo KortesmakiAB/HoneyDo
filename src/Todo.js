@@ -1,11 +1,30 @@
 import React from 'react';
 
-const Todo = ({ task }) => {
+const Todo = ({ id, task, isChecked, updateCheck }) => {
+
+    const handleCheck = evt => {
+        const { id } = evt.target;
+
+        isChecked = isChecked ? false : true;
+
+        updateCheck({
+            isChecked,
+            id,
+            task
+        });
+    };
     
     return (
-        <div>
-            { task }
-        </div>
+        <li>
+            <label htmlFor={id}></label>
+            <input 
+                id={id} 
+                name="checkbox" 
+                type="checkbox" 
+                onChange={ handleCheck }>
+            </input>
+            <span>{ task }</span>
+        </li>
     );
 };
 

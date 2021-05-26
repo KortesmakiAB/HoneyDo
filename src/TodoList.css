@@ -1,0 +1,20 @@
+
+.TodoList-remove {
+    position: relative;
+}
+
+.TodoList-ul {
+	position: relative;
+	font-size: 1.65em;
+}
+
+button {
+	padding: 6px;
+    margin: 6px;
+	border-radius: 8px;
+	color: white;
+	font-size: 1.05em;
+	background-color: #808080;
+	border: none;
+    box-shadow: 1px 1px 3px black;
+}
